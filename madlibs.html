@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head id=head>
+    <title>The Donald Says</title>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>The Donald Says</h1>
+    <br>
+    <h2>On Health Care</h2>
+    <p>"You have to be hit by a <span id="reallyFastObject1"></span>, literally, a <span id="reallyFastObject2"></span>, to use it, because the <span id="wallStreetNoun1"></span> are so high. It's virtually useless. And remember the $5 billion <span id="techProduct1"></span>s?... I have so many <span id="techProduct2"></span>s, I have them all over the place. I hire people, they do a <span id="techProduct3"></span>. It costs me $3."</p>
+    <br>
+    <h2>On Foreign Policy</h2>
+    <p>"I just sold a <span id="techProduct4"></span> for <span id="ridiculousDollarAmount"></span> to somebody from China. Am I supposed to dislike them?... I love China. The biggest bank in the world is from China. You know where their United States headquarters is located? In this building, in Trump Tower.</p>
+    <p>"Their <span id="randomNoun1"></span> are much smarter than our <span id="randomNoun2"></span>, and we can't sustain ourselves with that. It's like - take the <span id="professionalTeam"></span> and <span id="bestPlayer"></span> and have them play your high school <span id="sport"></span> team. That's the difference between China's <span id="randomNoun3"></span> and our <span id="randomNoun4"></span>."</p>
+    <br>
+    <h2>On Campaign Finance</h2>
+    <p>"I don't need anybody's <span id="wallStreetNoun2"></span>. It's nice. I don't need anybody's <span id="wallStreetNoun3"></span>. I'm using my own <span id="wallStreetNoun4"></span>. I'm not using the lobbyists. I'm not using donors. I don't care. I'm really <span id="foodAdjective"></span>, I'll show you that in a second. And by the way, I'm not even saying that in a braggadocios ... that's the kind of thinking you need for this country."</p>
+    <br>
+    <script>
+      var fastObject = prompt("Enter a really fast object here.");
+      var wallStreetNoun = prompt("Now enter a noun having to do with Wall Street.");
+      var techProduct = prompt("How about a category of tech product?");
+      var dollarAmount = prompt("Now place a very high dollar amount here.");
+      var randomNoun = prompt("Any random noun:");
+      var professionalSport = prompt("Your favorite professional sport?");
+      var favProfessionalTeam = prompt("Now your favorite team in that sport:");
+      var favoritePlayer = prompt("And your favorite player on that team?");
+      var foodAdj = prompt("Last one I promise. Any adjective pertaining to food.");
+      document.querySelector('#reallyFastObject1, #reallyFastObject2').textContent = fastObject;
+      document.querySelector('#wallStreetNoun1, #wallStreetNoun2, #wallStreetNoun3, #wallStreetNoun4').textContent = wallStreetNoun;
+      document.querySelector('#techProduct1, #techProduct2, #techProduct3, #techProduct4').textContent = techProduct;
+      document.querySelector('#ridiculousDollarAmount').textContent = dollarAmount;
+      document.querySelector('#randomNoun1, #randomNoun2, #randomNoun3, #randomNoun4').textContent = randomNoun;
+      document.querySelector('#sport').textContent = professionalSport;
+      document.querySelector('#professionalTeam').textContent = favProfessionalTeam;
+      document.querySelector('#bestPlayer').textContent = favoritePlayer;
+      document.querySelector('#foodAdjective').textContent = foodAdj;
+    </script>
+  </body>
+</html>
